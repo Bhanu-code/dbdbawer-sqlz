@@ -1,0 +1,36 @@
+
+body{
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: auto;
+    background-color: rgb(252, 252, 216);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .table-name{
+    text-align: center;
+  }
+  
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #d6eeee;
+  }
+  
+  .flag {
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+  }

@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/arrow-line/dist/arrow-line.min.js"></script>
+</head>
+
+<body>
+  <% data.forEach(entry=> { %>
+    <table>
+      <thead>
+        <tr>
+          <h2 class="table-name">
+            <%= entry[0].Model.getTableName() %>
+          </h2>
+        </tr>
+      </thead>
+      <tr>
+        <% entry.forEach(item=>{ %>
+          
+          <td>
+            <%= item.fieldName %>
+          </td>
+          <td>
+            <%= item.type %>
+          </td>
+
+          <% if(item.primaryKey===true){ %>
+            <td id="st">
+              <button class="flag" style="background-color:blue">primary key</button>
+            </td>
+            <% } %>
+
+              <% if(item.allowNull===true){ %>
+                <td>
+                  <button class="flag" style="background-color:rgb(146, 248, 143)">allowNull</button>
+                </td>
+                <% } %>
+
+                  <% if(item.autoIncrement===true){ %>
+                    <td>
+                      <button class="flag" style="background-color:rgb(243, 74, 52)">autoIncrement</button>
+                    </td>
+                    <% } %>
+
+                      <% if(item.unique===true){ %>
+                        <td id="end">
+                          <button class="flag" style="background-color:rgb(42, 241, 241)">unique</button>
+                        </td>
+                        <% } %>
+
+      </tr>
+      <% }) %>
+
+    </table>
+    <br>
+    <% }) %>
+      </div>
+
+      <script>
+        arrowLine('#st', '#end', { color: 'blue' });
+        console.log("object")
+
+        setInterval(() => {
+          location.reload()
+        }, 2000);
+      </script>
+</body>
+
+</html>
