@@ -1,11 +1,7 @@
 
 # dbdrawer-sqlz
 
-a cli tool for visualising your mongoose schema. dbdrawer-mongo checks the data model schemas of your project ("./models") folder and visualises by running on localhost in node environment. it attaches to your project as an npm package.
-
-currently, we have support only for sequelize and mongoose.
-For,  sequelize check: https://github.com/Bhanu-code/dbdrawer-sql
-
+a cli tool for visualising your sequelize schema. dbdrawer-sqlz checks the data model schemas of your project ("./models") folder and visualises by running on localhost in node environment. it attaches to your project as an npm package.
 
 
 ## Installation

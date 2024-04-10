@@ -7,6 +7,21 @@ body{
     background-color: rgb(58, 55, 55);
   }
 
+  .rate{
+    position: absolute;
+    /* left: 20rem; */
+    right: 1rem;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  img{
+    width: 20px;
+    height: 20px;
+  }
+
 
   * {
     box-sizing: border-box;
