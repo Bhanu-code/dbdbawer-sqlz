@@ -35,8 +35,7 @@ npm install
 // have a project that has "models" folder
 //install dbdrawer-mongo to the project globally
 npm install -g 
-//run the command 'dbdrawm'
-dbdraw-s
+//have a dummy project with models
 //create a branch, makes changes and raise PR
 
 //open terminal and type

@@ -1,4 +1,4 @@
-# Code of Conduct - dbdrawer-mongo
+# Code of Conduct - dbdrawer-sqlz
 
 ## Our Pledge
 
